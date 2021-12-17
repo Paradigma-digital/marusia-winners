@@ -60,7 +60,9 @@ body {
   min-width: 320px;
   font-style: normal;
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
-  font-feature-settings: 'pnum' on, 'lnum' on; }
+  font-feature-settings: 'pnum' on, 'lnum' on; 
+  -webkit-tap-highlight-color: transparent;}
+  
 
 p {
   margin: 0 0 -29px 0; }

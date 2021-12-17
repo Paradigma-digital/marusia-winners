@@ -84,6 +84,8 @@ $(document).ready(function() {
 
 	});
 
+	document.querySelectorAll('.round-tmb.ajax-link')[1].click();
+
 	// Ajax links END
 
 	$(".rounds-slider").on("init", function () {
