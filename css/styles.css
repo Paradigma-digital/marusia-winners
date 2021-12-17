@@ -440,21 +440,56 @@ header {
   background: #272A37;
   color: #fff; }
 
-.header-logos {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 -85px 0 0;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.logo-img-mob {
-  display: none; }
+  .header-logos {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -85px 0 0;
+    -ms-flex-align: center;
+    align-items: center;
+    /* justify-content: flex-start; */
+  }
+  
+  .header-logos span {
+    display: block;
+    width: 1px;
+    height: 15px;
+    background: #AAAEB3;
+    margin-right: 14px;
+  }
+  
+  .header-logos a.vk {
+    margin-right: 14px;
+  }
+  .header-logos a.vk img {
+    width: 105px;
+  }
+  .footer-logos span {
+    height: 20px;
+  }
+  .logo-img {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  
+  }
+  .logo-img a:first-child {
+    margin-right: 0;
+  }
+  .logo-img a:last-child img{
+    width: 56px;
+    margin-top: -20px;
+  }
+  
+  .logo-img-mob {
+    display: none;
+  }
+  
 
 .header-logo-1 {
   margin: 0 85px 0 0; }
 
 .header-logo-2 {
-  margin: 0 85px 0 0; }
+  margin: 0 85px 0 31px; }
 
 ul.navbar-nav {
   font-weight: 500;
@@ -1289,7 +1324,8 @@ footer {
   width: 64px;
   height: 64px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(255, 255, 255, 0.9); */
+  border: 2px solid #fff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1297,13 +1333,15 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 11px; }
-
+.footer-soclink:hover {
+  border: none;
+}
 .footer-top {
   padding: 66px 0 63px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
 
 footer .header-logo-1 {
-  margin: 0 71px 0 0; }
+  margin: 0 14px 0 0; }
 
 .footer-bottom h4,
 .footer-bottom .h4 {
@@ -1588,7 +1626,7 @@ body .anim-1 span {
   .header-logos {
     margin: 0 -64px 0 0; }
   .header-logo-2 {
-    margin: 0 64px 0 0; }
+    margin: 0 64px 0 20px; }
   .header-logo-2 img {
     width: 132px; }
   ul.navbar-nav {
@@ -1835,7 +1873,7 @@ body .anim-1 span {
   .video {
     height: 475px; }
   footer .header-logo-1 {
-    margin: 0 53px 0 0; }
+    margin: 0 14px 0 0; }
   footer .header-logo-1 img {
     width: 195px; }
   footer .header-logo-2 img {
@@ -1878,7 +1916,7 @@ body .anim-1 span {
   .header-logos {
     margin: 0 -57px 0 0; }
   .header-logo-2 {
-    margin: 0 57px 0 0; }
+    margin: 0 57px 0 15px; }
   .header-logo-2 img {
     width: 117px; }
   ul.navbar-nav {
@@ -2130,7 +2168,7 @@ body .anim-1 span {
   main {
     padding-bottom: 72px; }
   footer .header-logo-1 {
-    margin: 0 46px 0 0; }
+    margin: 0 14px 0 0; }
   footer .header-logo-1 img {
     width: 174px; }
   footer .header-logo-2 img {
@@ -2179,7 +2217,7 @@ body .anim-1 span {
   .header-logos {
     margin: 0 -34px 0 0; }
   .header-logo-2 {
-    margin: 0 34px 0 0; }
+    margin: 0 34px 0 15px; }
   .header-logo-2 img {
     width: 71px; }
   .navbar-wrapper-inner {
@@ -2540,7 +2578,7 @@ body .anim-1 span {
   main {
     padding-bottom: 50px; }
   footer .header-logo-1 {
-    margin: 0 29px 0 0; }
+    margin: 0 14px 0 0; }
   footer .header-logo-1 img {
     width: 104px; }
   footer .header-logo-2 img {
@@ -2609,12 +2647,46 @@ body .anim-1 span {
     margin: 0 -15px 0 0; }
   .header-logo-1 {
     margin: 0 15px 0 0; }
+
+    .header-logos {
+      margin: 0 -15px 0 0;
+    }
+    .header-logos a:first-child {
+      margin-right: 0;
+      padding: 6px;
+    }
+    .header-logos a:last-child {
+      margin-left: 0;
+      padding: 6px;
+    }
+  
+    .header-logo-1 {
+      margin: 0 15px 0 0;
+    }
   .logo-img {
     display: none; }
-  .logo-img-mob {
-    display: block; }
-  .header-logo-1 img {
-    width: 42px; }
+  	.logo-img-mob {
+      display: flex;
+      align-items: center;
+    }
+    .logo-img-mob a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-img-mob span {
+      height: 10px;
+      margin: 0;
+    }
+  
+    .logo-img-mob .vk-mob {
+      padding: 10px;
+    }
+  
+    .header-logo-1 img {
+      /* width: 42px; */
+      width: 18px;
+    }
   .header-logo-2 {
     margin: 0 15px 0 0; }
   .header-logo-2 img {
@@ -2966,8 +3038,7 @@ body .anim-1 span {
     transform: translate(-50%, -50%) scale(0.5); }
   main {
     padding-bottom: 60px; }
-  footer .header-logo-1 {
-    margin: 0; }
+
   footer .header-logo-2 {
     display: none; }
   footer .header-logos {
