@@ -142,8 +142,9 @@ $(document).ready(function() {
 			}
 		]
 	});
-
+	$(".ajax-link")[1].click();
 	// Stage tmb
+
 	
 	$(".stage-tmb-switch").on("click", function () {
 
