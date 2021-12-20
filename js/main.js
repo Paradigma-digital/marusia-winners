@@ -83,8 +83,7 @@ $(document).ready(function() {
 		return false;
 
 	});
-
-	document.querySelectorAll('.round-tmb.ajax-link')[1].click();
+	$(".ajax-link")[1].click();
 
 	// Ajax links END
 
