@@ -3379,7 +3379,9 @@ body .anim-1 span {
 .winner-tmb {
   display: flex;
 }
-
+.winner-tmb-2 .winner-tmb-text {
+ min-height: 180px;
+}
 
 .winner-tmb-badge {
   background: #fff;
@@ -3567,6 +3569,9 @@ body .anim-1 span {
     font-size: 16px;
     padding: 35px;
     border-radius: 32px; }
+  .winner-tmb-2 .winner-tmb-text {
+    min-height: 140px;
+    }
   .winner-tmb-badge {
     font-size: 24px;
     border-radius: 19px;
@@ -3665,6 +3670,10 @@ body .anim-1 span {
     border-radius: 18px;
     font-size: 12px;
     padding: 40px 20px 20px 20px; }
+
+  .winner-tmb-2 .winner-tmb-text {
+      min-height: 140px;
+  }
   .winner-tmb-badge {
     font-size: 16px;
     border-radius: 10px;
