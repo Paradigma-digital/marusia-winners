@@ -47,6 +47,8 @@
   font-style: normal;
   font-display: swap; }
 
+
+  
 html,
 body {
   font-family: 'MazzardH', sans-serif;
@@ -3358,6 +3360,7 @@ body .anim-1 span {
 
 .winner-tmb {
   background: #272A37;
+  
   border-radius: 42px;
   overflow: hidden;
   position: relative;
@@ -3373,8 +3376,15 @@ body .anim-1 span {
 .winner-tmb-1 {
   background: #272A37 url(../images/prize-tmb-1-bg.png) right bottom no-repeat;
   background-size: auto 100%; }
-
+.winner-tmb {
+  display: flex;
+}
 .winner-tmb-inner {
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  flex-direction: column;
   position: relative; }
 
 .winner-tmb-badge {
