@@ -488,7 +488,7 @@ header {
   
 
 .header-logo-1 {
-  margin: 0 85px 0 0; }
+  margin: 0 14px 0 0; }
 
 .header-logo-2 {
   margin: 0 85px 0 31px; }
@@ -1342,7 +1342,7 @@ footer {
   padding: 66px 0 63px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
 
-footer .header-logo-1 {
+.header-logo-1 {
   margin: 0 14px 0 0; }
 
 .footer-bottom h4,
@@ -1874,7 +1874,7 @@ body .anim-1 span {
     transform: translate(-50%, -50%) scale(0.75); }
   .video {
     height: 475px; }
-  footer .header-logo-1 {
+ .header-logo-1 {
     margin: 0 14px 0 0; }
   footer .header-logo-1 img {
     width: 195px; }
@@ -2169,7 +2169,7 @@ body .anim-1 span {
     height: 475px; }
   main {
     padding-bottom: 72px; }
-  footer .header-logo-1 {
+  .header-logo-1 {
     margin: 0 14px 0 0; }
   footer .header-logo-1 img {
     width: 174px; }
@@ -2579,7 +2579,7 @@ body .anim-1 span {
     height: 251px; }
   main {
     padding-bottom: 50px; }
-  footer .header-logo-1 {
+  .header-logo-1 {
     margin: 0 14px 0 0; }
   footer .header-logo-1 img {
     width: 104px; }
@@ -2634,8 +2634,39 @@ body .anim-1 span {
     font-size: 16px; }
   .section-top-text.anim-1 p {
     margin: 0px; } }
+.logo-img.tablet {
+  display: none;
+}
+    
+@media (min-width: 768px) and (max-width: 992px) {
+  /* .logo-img.tablet {
+    display: flex;
+  }
+  .header-no-tablet {
+    display: none;
+  }
+  .header-logos span.header-no-tablet {
+    display: none;
+  } */
+  .header-col-1 .header-logos>span,
+  .header-col-1 .header-logos>.vk,
+  .header-col-1 .header-logos>.header-logo-1 {
+    display: none;
+  } 
+  .logo-img.tablet {
+    display: flex;
+  }
+  .logo-img.tablet>a>img.vk{
+    margin-top: 0 ;
+  }
 
+}
 @media (max-width: 767px) {
+  .header-col-1 .header-logos>span,
+  .header-col-1 .header-logos>.vk,
+  .header-col-1 .header-logos>.header-logo-1 {
+    display: none;
+  } 
   html,
   body {
     font-size: 16px;
@@ -2654,7 +2685,7 @@ body .anim-1 span {
       margin: 0 -15px 0 0;
     }
     .header-logos a:first-child {
-      margin-right: 0;
+      /* margin-right: 0; */
       padding: 6px;
     }
     .header-logos a:last-child {
@@ -2663,7 +2694,7 @@ body .anim-1 span {
     }
   
     .header-logo-1 {
-      margin: 0 15px 0 0;
+      margin: 0 12px 0 0;
     }
   .logo-img {
     display: none; }
