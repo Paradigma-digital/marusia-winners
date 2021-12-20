@@ -3379,13 +3379,7 @@ body .anim-1 span {
 .winner-tmb {
   display: flex;
 }
-.winner-tmb-inner {
-  min-height: 100%;
-  display: flex;
-  justify-content: flex-end;
 
-  flex-direction: column;
-  position: relative; }
 
 .winner-tmb-badge {
   background: #fff;
